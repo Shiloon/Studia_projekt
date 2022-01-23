@@ -6,6 +6,11 @@ public class RobotNPC : MonoBehaviour
 {
     public GameObject uiPanel;
 
+    public void Start()
+    {
+        HideUI();
+    }
+
     public void ShowUI()
     {
         uiPanel.SetActive(true);

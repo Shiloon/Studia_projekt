@@ -17,7 +17,7 @@ public class QuestController : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerExit(Collider other)
     {
         RobotNPC npc = other.gameObject.GetComponent<RobotNPC>();
 
