@@ -8,6 +8,7 @@ public class RobotNPC : MonoBehaviour
     public GameObject questStarted;
     public GameObject questFinished;
     public PickupController pickupController;
+    public Animator doorAnimator;
     private bool isQuestFinished = false;
     private bool isPlayerNear = false;
 
@@ -27,6 +28,7 @@ public class RobotNPC : MonoBehaviour
             }
             else 
             {
+                doorAnimator.Play("DoorOpen");
                 questStarted.SetActive(false);
                 questFinished.SetActive(true);
             }
