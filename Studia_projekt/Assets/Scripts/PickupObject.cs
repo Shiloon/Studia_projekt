@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PickupObject : MonoBehaviour
 {
+    public AudioSource pickupSound;
     public float rotationSpeed = 1.0f;
     public GameObject pickupModel;
 
@@ -20,6 +21,7 @@ public class PickupObject : MonoBehaviour
         {
             isFound = true;
             pickupModel.SetActive(false);
+            pickupSound.Play();
         }
     }
 }
