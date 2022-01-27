@@ -22,6 +22,7 @@ public class PickupObject : MonoBehaviour
             isFound = true;
             pickupModel.SetActive(false);
             pickupSound.Play();
+
         }
     }
 }
